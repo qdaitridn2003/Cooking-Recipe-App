@@ -1,10 +1,10 @@
 import { View, Text } from 'native-base'
 import React from 'react'
 
-export default function RootApp() {
+export default function HomeScreen() {
   return (
     <View>
-      <Text>RootApp</Text>
+      <Text>HomeScreen</Text>
     </View>
   )
 }
