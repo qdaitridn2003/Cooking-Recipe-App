@@ -1,11 +1,14 @@
 import React from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { Image } from 'react-native'
+import { Image } from 'react-native';
+import { Container } from '../components/StylesComponent'
 
 export default function SplashScreen() {
   return (
-      <SafeAreaView>
-        <Image className="w-full h-screen" source={require("../../assets/images/splashscreen.gif") }/>
-      </SafeAreaView>
+      <Container>
+      <Image
+        className="w-full h-full"
+        source={require("../../assets/images/splashscreen.gif")}
+      />
+      </Container>
   )
 }

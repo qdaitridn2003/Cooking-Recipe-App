@@ -9,7 +9,7 @@ export default function MainScreen() {
   useEffect(() => {
     setTimeout(() => {
       setSplash(false);
-    }, 13100);
+    }, 13150);
   })
 
   if (isSplash) return <SplashScreen />;
