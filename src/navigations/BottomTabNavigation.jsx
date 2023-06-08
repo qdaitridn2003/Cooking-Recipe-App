@@ -10,7 +10,6 @@ export default function BottomTabNavigation() {
 
   const BottomTab = createBottomTabNavigator();
 
-
   return (
     <NavigationContainer independent={true}>
       <BottomTab.Navigator initialRouteName="Popular"
@@ -21,15 +20,15 @@ export default function BottomTabNavigation() {
           },
           headerShown: false,
           tabBarShowLabel: false,
-          tabBarInactiveTintColor: "#ffffff",
-          tabBarActiveTintColor: "#ffffff",
+          tabBarInactiveTintColor: "#231f20",
+          tabBarActiveTintColor: "#231f20",
         }}>
         <BottomTab.Screen
           name="Popular" component={PopularScreen}
           options={{
             tabBarIcon: ({ focused, color }) => 
               focused ? <Entypo
-              style={{ backgroundColor: "rgba(248,157,31,0.75)", padding: 16, borderRadius: 100, }}
+              style={{ backgroundColor: "rgba(230, 129, 86, 0.4)", padding: 16, borderRadius: 100, }}
                 name="home" size={32} color={color} /> : <Entypo name="home" size={32} color={color}/>
           }}
         />
@@ -38,7 +37,7 @@ export default function BottomTabNavigation() {
           options={{
             tabBarIcon: ({ focused, color }) => 
               focused ? <Ionicons
-              style={{ backgroundColor: "rgba(248,157,31,0.75)", padding: 16, borderRadius: 100, }}
+              style={{ backgroundColor: "rgba(230, 129, 86, 0.4)", padding: 16, borderRadius: 100, }}
                 name="bookmark" size={32} color={color} /> : <Ionicons name="bookmark" size={32} color={color}/>
           }}
         />
@@ -47,7 +46,7 @@ export default function BottomTabNavigation() {
           options={{
             tabBarIcon: ({ focused, color }) => 
               focused ? <MaterialIcons
-              style={{ backgroundColor: "rgba(248,157,31,0.75)", padding: 16, borderRadius: 100, }}
+              style={{ backgroundColor: "rgba(230, 129, 86, 0.4)", padding: 16, borderRadius: 100, }}
                 name="favorite" size={32} color={color} /> : <MaterialIcons name="favorite" size={32} color={color}/>
           }}
         />
