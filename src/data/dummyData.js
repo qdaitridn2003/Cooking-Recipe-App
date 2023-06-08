@@ -158,6 +158,4 @@ const r12 = new Recipe(11, 'Nước rau má', 'https://hc.com.vn/i/ecommerce/med
 const listRecipe = [r1,r2,r3,r4,r5,r6,r7,r8,r9,r10,r11,r12];
 const listType = [breakfast, appetizer, mainDishes, sideDishes, dessert, drink];
 
-console.log(listRecipe);
-
 module.exports = { listRecipe, listType };
