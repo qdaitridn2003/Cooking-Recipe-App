@@ -15,7 +15,7 @@ export default function BottomTabNavigation() {
       <BottomTab.Navigator initialRouteName="Popular"
         screenOptions={{
           tabBarStyle: {
-            height: 100, backgroundColor: "#c0c1c3",
+            height: 100, backgroundColor: "#ededed",
             borderTopLeftRadius: 32, borderTopRightRadius: 32
           },
           headerShown: false,
