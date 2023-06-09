@@ -4,6 +4,7 @@ import React from 'react'
 import { Container } from '../components/StylesComponent';
 import RecipeItem from '../components/RecipeItem';
 import StackNavigation from '../navigations/StackNavigation';
+import { listRecipe } from '../data/dummyData';
 
 function MainScreen() {
   return (
@@ -26,12 +27,9 @@ function MainScreen() {
           InputLeftElement={<EvilIcons style={{marginLeft: 4}} name="search" size={36} color="black" />} />
       </View>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <RecipeItem/>
-        <RecipeItem/>
-        <RecipeItem/>
-        <RecipeItem/>
-        <RecipeItem/>
-        <RecipeItem/>
+        {
+          listRecipe.map(recipe => <View key={recipe.id}><RecipeItem recipe={recipe}/></View>)
+        }
       </ScrollView>
     </Container>
   )
