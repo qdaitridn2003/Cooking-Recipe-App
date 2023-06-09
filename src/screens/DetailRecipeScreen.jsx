@@ -13,7 +13,7 @@ export default function DetailRecipeScreen() {
   const { params } = useRoute();
   const { recipe } = params;
   const { url, calories, time, title, material, guide } = recipe;
-  const guideSize = guide.length;
+  const guideSize = guide?.length;
 
     console.log(guideSize);
 
@@ -47,7 +47,7 @@ export default function DetailRecipeScreen() {
             }
             <Text className="mt-5 text-xl font-bold">Hướng Dẫn</Text>
             { 
-              guide.map((item, index) => <View key={index}><GuideItem step={item.step} length={guideSize} content={item.content}/></View>)
+              guide?.map((item, index) => <View key={index}><GuideItem step={item.step} length={guideSize} content={item.content}/></View>)
             }
           </VStack>
         </ScrollView>
